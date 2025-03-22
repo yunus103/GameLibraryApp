@@ -1,0 +1,177 @@
+.root{
+    -fx-background-color: #272727;
+}
+
+.base-text-color{
+    -fx-text-fill: #fff;
+}
+
+.text-field{
+    -fx-background-color: #2952bb;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+	-fx-transition: -fx-background-color 0.3s ease;
+}
+
+.text-field:hover, .text-field:focused{
+    -fx-background-color: #3c6ed9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); /* Stronger shadow on hover/focus */
+
+}
+/* ComboBox Base Style */
+.combo-box {
+    -fx-background-color: #2952bb; /* Same blue as the filter button */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-border-color: transparent; /* No border */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Subtle shadow */
+    -fx-transition: -fx-background-color 0.3s ease, -fx-effect 0.3s ease; /* Smooth hover transition */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+/* ComboBox Hover and Focused State */
+.combo-box:hover, .combo-box:focused {
+    -fx-background-color: #3c6ed9; /* Lighter blue on hover/focus */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); /* Stronger shadow on hover/focus */
+}
+
+/* ComboBox Pressed State */
+.combo-box:pressed {
+    -fx-background-color: #1c3a8a; /* Darker blue on press */
+}
+
+/* ComboBox Arrow Button */
+.combo-box .arrow-button {
+    -fx-background-color: transparent; /* Transparent background for the arrow button */
+}
+
+.combo-box .arrow {
+    -fx-background-color: white; /* White arrow color */
+}
+
+/* ComboBox List View (Dropdown) */
+.combo-box .list-view {
+    -fx-background-color: #323232; /* Dark gray background for the dropdown */
+    -fx-background-radius: 5px; /* Rounded corners for the dropdown */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-border-color: #454545; /* Border color for the dropdown */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); /* Shadow for the dropdown */
+}
+
+/* ComboBox List Cell (Items in Dropdown) */
+.combo-box .list-cell {
+    -fx-background-color: #323232; /* Dark gray background for items */
+    -fx-text-fill: #fff; /* White text color */
+    -fx-font-size: 13px; /* Font size */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #454545; /* Lighter gray on hover */
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color: #2952bb; /* Blue background for selected item */
+    -fx-text-fill: #fff; /* White text color for selected item */
+}
+
+.button{
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+    -fx-background-radius: 7px;
+	-fx-border-radius: 7px;
+	-fx-background-color: #2952bb;
+	-fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0,0,1);
+    -fx-transition: -fx-background-color 0.3s ease;
+}
+
+.button:hover, .button:focused {
+	-fx-background-color: #3c6ed9;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: #1c3a8a;
+}
+
+
+/* Spinner styling */
+.spinner {
+    -fx-background-color: #2952bb;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+    -fx-transition: -fx-background-color 0.3s ease;
+}
+
+.spinner:hover, .spinner:focused {
+    -fx-background-color: #3c6ed9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+}
+
+.spinner:pressed {
+    -fx-background-color: #1c3a8a;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+.spinner .increment-arrow,
+.spinner .decrement-arrow {
+    -fx-background-color: white;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #3c6ed9;
+}
+
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+    -fx-font-size: 13px;
+}
+
+/* CheckBox styling */
+.check-box {
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+    -fx-font-size: 12.3px;
+}
+
+.check-box .box {
+    -fx-background-color: #444;
+    -fx-border-color: #666;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #2952bb;
+    -fx-border-color: #2952bb;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #fff;
+}
+
+.check-box:hover .box {
+    -fx-background-color: #555;
+}
+
+.check-box:selected:hover .box {
+    -fx-background-color: #3c6ed9;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #333;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #555;
+}

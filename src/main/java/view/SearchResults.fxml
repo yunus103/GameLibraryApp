@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fx:id="scrollPane" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" style="-fx-focus-color: transparent; -fx-faint-focus-color: transparent;" stylesheets="@/css/SearchResults.css" vbarPolicy="AS_NEEDED" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.SearchController">
+    <content>
+        <VBox fx:id="resultsContainer" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" styleClass="root">
+         <padding>
+            <Insets left="5.0" />
+         </padding></VBox>
+    </content>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="scroll-bar" />
+      <String fx:value="thumb" />
+   </styleClass>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</ScrollPane>

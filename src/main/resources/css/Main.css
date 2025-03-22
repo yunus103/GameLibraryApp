@@ -1,0 +1,94 @@
+.root{
+	-fx-background-color: #272727;
+}
+
+.top-bar{
+	-fx-background-color: #262626;
+}
+.searchBar{
+	-fx-background-color: #323232;
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+	-fx-transition: -fx-background-color 0.3s ease;
+}
+
+.searchBar:hover, .searchBar:focused{
+	-fx-background-color: #454545;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+}
+
+.buttons{
+	-fx-background-color: #323232;
+	-fx-cursor: hand;
+	-fx-background-radius: 5px;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0,0,1);
+	-fx-transition: -fx-background-color 0.3s ease;
+}
+
+.buttons:hover, .buttons:focused {
+	-fx-background-color: #474747;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+}
+
+.buttons:pressed {
+    -fx-background-color: #1c3a8a;
+}
+
+.base_text_color{
+	-fx-text-fill: #fff;
+}
+
+.search_button{
+	-fx-background-radius: 10px;
+	-fx-border-radius: 10px;
+	-fx-background-color: #2952bb;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+    -fx-transition: -fx-background-color 0.3s ease;
+}
+
+.search_button:hover, .search_button:focused {
+	-fx-background-color: #3c6ed9;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+}
+
+.search_button:pressed {
+    -fx-background-color: #1c3a8a;
+}
+
+.close, .minimize, .maximize{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-transition: -fx-background-color 0.3s ease, -fx-scale-x 0.3s ease, -fx-scale-y 0.3s ease;
+}
+
+.close:hover {
+    -fx-background-color: rgba(195, 2, 2, 0.8);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.close:pressed {
+    -fx-background-color: rgba(150, 0, 0, 0.8);
+}
+
+.maximize{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-transition: -fx-background-color 0.3s ease, -fx-scale-x 0.3s ease, -fx-scale-y 0.3s ease;
+	-fx-text-fill: black; /* Bold black color */
+	-fx-font-size: 17px; /* Adjust font size to fit the button */
+	-fx-font-weight: bold; /* Make the icon bold */
+	-fx-alignment: center;
+}
+
+.minimize:hover, .maximize:hover{
+    -fx-background-color: rgba(69, 69, 69, 0.8);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.minimize:pressed, .maximize:pressed {
+    -fx-background-color: rgba(50, 50, 50, 0.8);
+}
+

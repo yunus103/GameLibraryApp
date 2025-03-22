@@ -1,0 +1,125 @@
+.root{
+    -fx-background-color: #272727;
+}
+
+.game-tile{
+    -fx-background-color: #323232;
+    -fx-background-radius: 3px;
+    -fx-padding: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+    -fx-transition: -fx-background-color 0.3s ease, -fx-scale-x 0.3s ease, -fx-scale-y 0.3s ease;
+}
+
+.game-tile:hover{
+    -fx-background-color: #454545;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.game-tile:pressed{
+    -fx-background-color: #1c3a8a;
+}
+
+.game-image{
+    -fx-fit-height: 210px; /* Fixed height for the image */
+    -fx-fit-width: 160px; /* Fixed width for the image */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1);
+    -fx-transition: -fx-effect 0.3s ease;
+}
+
+.game-image:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); /* Lighter and larger shadow on hover */
+}
+
+.game-title{
+    -fx-text-fill: #fff;
+    -fx-font-size: 13px;
+    -fx-padding: 2px 0;
+    -fx-font-weight: bold;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #333;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #555;
+}
+
+.filter-button{
+    -fx-background-radius: 5px;
+	-fx-border-radius: 5px;
+	-fx-background-color: #2952bb;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+    -fx-transition: -fx-background-color 0.3s ease;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.filter-button:hover, .filter-button:focused{
+    -fx-background-color: #3c6ed9;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+}
+
+.filter-button:pressed{
+    -fx-background-color: #1c3a8a;
+}
+
+/* ComboBox Base Style */
+.combo-box {
+    -fx-background-color: #2952bb; /* Same blue as the filter button */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-border-color: transparent; /* No border */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Subtle shadow */
+    -fx-transition: -fx-background-color 0.3s ease, -fx-effect 0.3s ease; /* Smooth hover transition */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+/* ComboBox Hover and Focused State */
+.combo-box:hover, .combo-box:focused {
+    -fx-background-color: #3c6ed9; /* Lighter blue on hover/focus */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); /* Stronger shadow on hover/focus */
+}
+
+/* ComboBox Pressed State */
+.combo-box:pressed {
+    -fx-background-color: #1c3a8a; /* Darker blue on press */
+}
+
+/* ComboBox Arrow Button */
+.combo-box .arrow-button {
+    -fx-background-color: transparent; /* Transparent background for the arrow button */
+}
+
+.combo-box .arrow {
+    -fx-background-color: white; /* White arrow color */
+}
+
+/* ComboBox List View (Dropdown) */
+.combo-box .list-view {
+    -fx-background-color: #323232; /* Dark gray background for the dropdown */
+    -fx-background-radius: 5px; /* Rounded corners for the dropdown */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-border-color: #454545; /* Border color for the dropdown */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); /* Shadow for the dropdown */
+}
+
+/* ComboBox List Cell (Items in Dropdown) */
+.combo-box .list-cell {
+    -fx-background-color: #323232; /* Dark gray background for items */
+    -fx-text-fill: #fff; /* White text color */
+    -fx-font-size: 13px; /* Font size */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #454545; /* Lighter gray on hover */
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color: #2952bb; /* Blue background for selected item */
+    -fx-text-fill: #fff; /* White text color for selected item */
+}

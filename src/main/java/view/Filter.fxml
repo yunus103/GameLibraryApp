@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="345.0" spacing="5.0" style="-fx-focus-color: transparent; -fx-faint-focus-color: transparent;" stylesheets="@/css/PopUp.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.FilterController">
+   <children>
+      <Label styleClass="base-text-color" text="Platforms">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="3.0" />
+         </VBox.margin>
+      </Label>
+      <CheckBox fx:id="PlayStation" mnemonicParsing="false" text="PlayStation">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="Steam" layoutX="25.0" layoutY="56.0" mnemonicParsing="false" text="Steam">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="EpicGames" layoutX="25.0" layoutY="56.0" mnemonicParsing="false" text="Epic Games">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="EAGames" layoutX="25.0" layoutY="79.0" mnemonicParsing="false" text="EA Games">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="Xbox" layoutX="25.0" layoutY="125.0" mnemonicParsing="false" text="Xbox">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="Ubisoft" layoutX="25.0" layoutY="148.0" mnemonicParsing="false" text="Ubisoft">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="GoG" layoutX="25.0" layoutY="176.0" mnemonicParsing="false" text="GoG.com">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="25.0" layoutY="25.0" styleClass="base-text-color" text="Genre">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="178.0" prefWidth="297.0" styleClass="root">
+         <content>
+            <VBox prefHeight="547.0" prefWidth="325.0" spacing="5.0">
+               <children>
+                  <CheckBox fx:id="Adventure" mnemonicParsing="false" text="Adventure">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Arcade" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Arcade">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Card" layoutX="10.0" layoutY="33.0" mnemonicParsing="false" text="Card &amp; Board Game">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Fighting" layoutX="10.0" layoutY="56.0" mnemonicParsing="false" text="Fighting">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Hack" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" text="Hack and slash/Beat 'em up">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Indie" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" text="Indie">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="MOBA" layoutX="10.0" layoutY="124.0" mnemonicParsing="false" text="MOBA">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Music" layoutX="10.0" layoutY="147.0" mnemonicParsing="false" text="Music">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Pinball" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" text="Pinball">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Platform" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" text="Platform">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Point" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" text="Point-and-click">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Puzzle" layoutX="10.0" layoutY="124.0" mnemonicParsing="false" text="Puzzle">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Quiz" layoutX="10.0" layoutY="124.0" mnemonicParsing="false" text="Quiz/Trivia">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Racing" layoutX="10.0" layoutY="284.0" mnemonicParsing="false" text="Racing">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Real" layoutX="10.0" layoutY="124.0" mnemonicParsing="false" text="Real Time Strategy (RTS)">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Role" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" text="Role-playing (RPG)">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Shooter" layoutX="10.0" layoutY="147.0" mnemonicParsing="false" text="Shooter">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Simulator" layoutX="10.0" layoutY="124.0" mnemonicParsing="false" text="Simulator">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Sport" layoutX="10.0" layoutY="124.0" mnemonicParsing="false" text="Sport">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Strategy" layoutX="10.0" layoutY="124.0" mnemonicParsing="false" text="Strategy">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Tactical" layoutX="10.0" layoutY="170.0" mnemonicParsing="false" text="Tactical">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Turn" layoutX="10.0" layoutY="193.0" mnemonicParsing="false" text="Turn-based strategy (TBS)">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Visual" layoutX="10.0" layoutY="216.0" mnemonicParsing="false" text="Visual Novel">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+               <styleClass>
+                  <String fx:value="scroll-bar" />
+                  <String fx:value="root" />
+                  <String fx:value="thumb" />
+               </styleClass>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Button fx:id="btn_apply" mnemonicParsing="false" onAction="#handleApply" prefHeight="33.0" prefWidth="117.0" text="Apply Filters">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets left="15.0" top="15.0" />
+   </padding>
+</VBox>

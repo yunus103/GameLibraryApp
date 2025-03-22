@@ -1,0 +1,48 @@
+.root{
+    -fx-background-color: #272727;
+}
+
+.search-result{
+    -fx-background-radius: 2px;
+    -fx-padding: 5px;
+    -fx-margin: 3px;
+    -fx-border-color: #454545; /* Border color */
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Subtle shadow */
+    -fx-transition: -fx-background-color 0.3s ease, -fx-effect 0.3s ease; 
+}
+
+.search-result:hover{
+    -fx-background-color: #454545;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); /* Stronger shadow on hover */
+}
+
+.search-result:pressed{
+    -fx-background-color: #1c3a8a;
+}
+
+.search-result-title{
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.search-result-company{
+    -fx-text-fill: #ccc;
+    -fx-font-size: 14px;
+}
+
+.search-result-library{
+    -fx-text-fill: #aaa;
+    -fx-font-size: 16px;
+    -fx-padding: 15px 10px 0 0;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #333;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #555;
+}
