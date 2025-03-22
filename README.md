@@ -109,6 +109,8 @@ Open in Eclipse or your preferred IDE.
 
 Ensure Java and Maven are installed.
 
+Make sure you change config.properties with your credentials.
+
 Run App.java to launch the application.
 
 For any questions or contributions, feel free to reach out!
