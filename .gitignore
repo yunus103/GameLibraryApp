@@ -24,4 +24,4 @@ hs_err_pid*
 replay_pid*
 
 # Ignore properties files containing credentials
-config.properties
+src/main/resources/config.properties
